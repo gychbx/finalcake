@@ -1,0 +1,9 @@
+.lead {
+  display: flex;
+  justify-content: space-around;
+    padding-bottom: 20rpx;
+}
+.color {
+  color: pink;
+  border-bottom: 1px solid pink;
+}

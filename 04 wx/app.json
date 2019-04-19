@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/gift/gift",
+    "pages/cakelist/cakelist",
+    "pages/shoppingcart/shoppingcart",
+    "pages/giftsallnum/giftsallnum",
+    "pages/giftnew/giftnew",
+    "pages/cakesallnum/cakesallnum",
+    "pages/cakenew/cakenew",
+    "pages/tusi/tusi",
+    "pages/tusinew/tusinew",
+    "pages/tusisallnum/tusisallnum"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#DD698B",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "/pages/main/img/首页.png",
+        "selectedIconPath": "/pages/main/img/首页.png"
+      },
+      {
+        "pagePath": "pages/tusi/tusi",
+        "text": "吐司馆",
+        "iconPath": "/pages/main/img/吐司.png",
+        "selectedIconPath": "/pages/main/img/吐司.png"
+      },
+      {
+        "pagePath": "pages/cakelist/cakelist",
+        "text": "蛋糕馆",
+        "iconPath": "/pages/main/img/蛋糕.png",
+        "selectedIconPath": "/pages/main/img/蛋糕.png"
+      },
+      {
+        "pagePath": "pages/gift/gift",
+        "text": "礼品馆",
+        "iconPath": "/pages/main/img/礼物.png",
+        "selectedIconPath": "/pages/main/img/礼物.png"
+      },
+      {
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "text": "我的购物车",
+        "iconPath": "/pages/main/img/购物车.png",
+        "selectedIconPath": "/pages/main/img/购物车.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+.shopbox {
+  width: 90%;
+  margin: 0 auto;
+}
+.shoppingbox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 1px solid #949494;
+  padding-top: 100rpx;
+  padding-bottom: 100rpx;
+}
+.shoppingbox image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.shopinfo {
+  text-align: center;
+  font-size: 14px;
+  color: #949494;
+}
+
+.tjtitle {
+  padding-top: 40rpx;
+  padding-bottom: 25rpx;
+  color: #A28C6B;
+  font-size: 16px;
+  text-align: center;
+}
+.cakelist {
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.cake {
+  width: 48%;
+  font-size: 14px;
+  margin-bottom: 10rpx;
+}
+.cake image {
+  width: 100%;
+  height: 320rpx;
+  margin-bottom: 10rpx;
+}
+.addshop {
+  display: flex;
+  justify-content: space-between;
+}
+.addbtn {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: white;
+  background: #FE4E05;
+}
+.addbtn::after {
+  border: 0;
+}
+.cl {
+  display: flex;
+  font-size: 14px;
+  padding: 10rpx 0;
+  border-bottom: 1px solid gainsboro; 
+}
+.topone {
+  height: 160rpx;
+}
+
+.myjian,.myadd {
+padding: 0;
+margin: 0;
+  width: 80rpx;
+  height:80rpx;
+  display: inline-block;
+} 
+.item-select {
+  padding-top:120rpx;
+}
+.shopimg{
+width: 250rpx;
+height: 250rpx;
+}
+
+.mydel {
+  width: 50rpx;
+  height: 50rpx;
+}
+icon,.shopimg {
+  padding-right: 10rpx;
+} 
+.mydel{
+  padding-left: 10rpx;
+}
+.sum {
+  width: 100%;
+  height: 100rpx;
+  font-size: 16px;
+  display: flex;
+  line-height: 100rpx;
+}
+.item-select-pay {
+  padding-top: 20rpx;
+}
+ .paynum {
+   /* width: 30%; */
+   padding-left: 100rpx;
+ }
+ .gopay{
+   /* width: 50%; */
+   margin-left: 150rpx;
+ }

@@ -1,0 +1,89 @@
+<!--pages/main/main.wxml-->
+<scroll-view  scroll-y='true' class='box'>
+
+
+<swiper indicator-dots="true" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#DD698B" autoplay="true" interval="3000" circular="true">
+<block wx:for="{{imgs}}">
+<swiper-item class="autoimg">
+    <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+</block>
+</swiper>
+
+<view class='img1'>
+<image src='{{i1}}' class='img1son'></image>
+<image src='{{i2}}'></image>
+</view>
+
+
+ <view class='gocake' bindtap='go1'>蛋糕馆<text class='myborder'>></text>
+ </view>
+
+
+<view class='cakelist'>
+<block wx:for="{{imgs2}}">
+<view class="cake">
+    <image src="{{item.imgurl}}" class="slide-image"/>
+    <view>{{item.pname}}</view>
+    <view class='addshop'>
+    <view>{{item.price}}</view>
+    <view><button data-goodid="{{item.cid}}" data-imgurl="{{item.imgurl}}" data-name="{{item.pname}}" data-price="{{item.price}}"  class="addbtn button-addCar" bindtap="addCar" formType="submit">+</button>
+    </view>
+    </view>
+</view>
+</block>
+</view>
+
+<view class='tusi'>
+<image src='{{tusi}}'></image>
+</view>
+
+ <view class='gotusi' bindtap='go2'>吐司馆<text class='myborder'>></text></view>
+
+
+<scroll-view  scroll-x='true' >
+<view class='tusilist'>
+<block wx:for="{{imgs3}}">
+<view class="tusiimg">
+    <image src="{{item.imgurl}}" class="slide-image"/>
+    <view>{{item.pname}}</view>
+    <view class='addshop'>
+    <view>{{item.price}}</view>
+    <view>
+    <button data-goodid="{{item.cid}}" data-imgurl="{{item.imgurl}}" data-name="{{item.pname}}" data-price="{{item.price}}"  class="addbtn button-addCar" bindtap="addCar" formType="submit">+</button>
+    </view>
+    </view>
+</view>
+</block>
+</view>
+</scroll-view>
+
+<view class='gift'>
+<image src='{{giftimg}}'></image>
+</view>
+
+ <view class='gogift' bindtap='go3'>礼品馆<text class='myborder'>></text></view>
+
+
+<scroll-view  scroll-x='true' >
+<view class='tusilist'>
+<block wx:for="{{imgs4}}">
+<view class="tusiimg">
+    <image src="{{item.imgurl}}" class="slide-image"/>
+    <view>{{item.pname}}</view>
+    <view class='addshop'>
+    <view>{{item.price}}</view>
+    <view><button data-goodid="{{item.cid}}" data-imgurl="{{item.imgurl}}" data-name="{{item.pname}}" data-price="{{item.price}}"  class="addbtn button-addCar" bindtap="addCar" formType="submit">+</button>
+    </view>
+    </view>
+</view>
+</block>
+</view>
+</scroll-view>
+<view class='copy'>
+copyright © 2010-2019 诺心lecake.com版权所有
+诺心食品（上海）有限公司 
+沪ICP备10211730号
+</view>
+
+</scroll-view>

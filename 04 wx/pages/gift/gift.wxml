@@ -1,0 +1,27 @@
+<scroll-view scroll-y='true' class='all'>
+<scroll-view scroll-x='true'>
+  <view class='lead'>
+    <block wx:for="{{name}}">
+      <navigator url='{{item.path}}' open-type="{{item.a==1?'navigate':'switchTab'}}">
+        <view class="item {{active==index?'color':''}}" data-id='1'>{{item.title}}</view>
+      </navigator>
+    </block>
+  </view>
+</scroll-view>
+
+<view class='cakelist'>
+<block wx:for="{{imgs4}}">
+<view class="cake">
+    <image src="{{item.imgurl}}" class="slide-image"/>
+    <view>{{item.pname}}</view>
+    <view class='addshop'>
+    <view>{{item.price}}</view>
+    <view>
+    <button data-goodid="{{item.cid}}" data-imgurl="{{item.imgurl}}" data-name="{{item.pname}}" data-price="{{item.price}}"  class="addbtn button-addCar" bindtap="addCar" formType="submit">+</button>
+    </view>
+    </view>
+</view>
+</block>
+</view>
+<view class='nomore'>-没有更多产品-</view>
+</scroll-view>

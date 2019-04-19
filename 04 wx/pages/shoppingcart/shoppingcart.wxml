@@ -1,0 +1,75 @@
+<scroll-view scroll-y='true' class='shopbox'>
+  <block wx:if="{{carts.length==0}}">
+    <view class='shoppingbox'>
+      <image src='../main/img/empty.png'></image>
+      <view class='shopinfo'>您还没有选购商品</view>
+      <!-- <navigator url="../../pages/main/main">
+  <a href="//m.vip.com" class="button button-primary" >去抢购/a>
+</navigator> -->
+    </view>
+    <view class='tuijian'>
+    <view class='tjtitle'>
+      <view>推荐商品</view>
+      <view>Sincerely Recommend</view>
+    </view>
+
+    <view class='cakelist'>
+      <block wx:for="{{goods}}">
+        <view class="cake">
+          <image src="{{item.imgurl}}" class="slide-image" />
+          <view>{{item.name}}</view>
+          <view class='addshop'>
+            <view>{{item.price}}</view>
+            <!-- 绑定bindtap事件将商品加入购物车 -->
+            <view>
+              <button data-goodid="{{item.goodsId}}" data-imgurl="{{item.imgurl}}" data-name="{{item.name}}" data-price="{{item.price}}" class="addbtn button-addCar" bindtap="addCar" formType="submit">+</button>
+            </view>
+
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  </block>
+
+  <block wx:if="{{!carts.length==0}}">
+
+    <block wx:for="{{carts}}">
+      <view class='cl'>
+        <block wx:if="{{!item.selected}}">
+          <icon class="item-select" bindtap="selectedCart" data-index="{{index}}" data-id="{{index}}" type="circle" size="20"></icon>
+        </block>
+        <block wx:if="{{item.selected}}">
+          <icon class="item-select" bindtap="selectedCart" data-index="{{index}}" data-id="{{index}}" type="success" color="#f0145a" size="20"></icon>
+        </block>
+        <image class='shopimg' src='{{item.imgurl}}'></image>
+        <view>
+          <view class='topone'>
+            <view class='myname'>{{item.name}}</view>
+            <view class='myprice'>{{item.price}}</view>
+          </view>
+          <view class='mynum'>
+            <button bindtap="reduce" class='myjian' data-index="{{index}}">-</button>{{item.count}}
+            <button bindtap="add" class='myadd' data-index="{{index}}">+</button>
+            <image class='mydel' src='../main/img/del.png' bindtap="shanchu" data-index="{{index}}"></image>
+          </view>
+        </view>
+      </view>
+
+    </block>
+    <view class='sum'>
+      <block wx:if="{{!checkAll}}">
+        <icon class="item-select item-select-pay" bindtap="select" data-index="{{index}}" type="circle" size="20"></icon>
+      </block>
+      <block wx:if="{{checkAll}}">
+        <icon class="item-select item-select-pay" bindtap="select" data-index="{{index}}" type="success" color="#f0145a" size="20"></icon>
+      </block>
+      <text>全选</text>
+      <view class='paynum'>应付：¥{{total}}</view>
+      <view class='gopay'>去结算</view>
+    </view>
+  </block>
+
+  
+
+</scroll-view>

@@ -1,0 +1,9 @@
+<scroll-view scroll-x='true'>
+  <view class='lead'>
+    <block wx:for="{{name}}">
+      <navigator url='{{item.path}}' open-type="{{item.a==1?'navigate':'switchTab'}}">
+        <view class="item {{active==index?'color':''}}" data-id='1'>{{item.title}}</view>
+      </navigator>
+    </block>
+  </view>
+</scroll-view>

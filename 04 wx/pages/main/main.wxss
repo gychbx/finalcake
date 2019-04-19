@@ -1,0 +1,101 @@
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+swiper {
+  width: 100%;
+  height: 840rpx;
+  margin: 0 auto;
+}
+swiper-item {
+  width: 100%;
+  height: 100%;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+  mode:scaleToFill;
+}
+.img1 {
+  display: flex;
+}
+.img1son {
+  margin-right: 20rpx;
+}
+.cakelist {
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.cake {
+  width: 48%;
+  font-size: 14px;
+  margin-bottom: 10rpx;
+}
+.addshop {
+  display: flex;
+  justify-content: space-between;
+}
+.addbtn {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: white;
+  background: #FE4E05;
+}
+.addbtn::after {
+  border: 0;
+}
+.cake image {
+  width: 100%;
+  height: 364rpx;
+
+}
+.tusi {
+  width: 100%;
+}
+.tusi image {
+  width: 100%;
+   height: 440rpx;
+}
+.tusilist {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 14px;
+}
+.tusilist image {
+  width: 330rpx;
+  height: 330rpx;
+}
+.tusiimg {
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+.gift {
+  width: 100%;
+}
+.gift image {
+  width: 100%;
+   height: 440rpx;
+}
+.copy {
+  font-size: 12px;
+  text-align: center;
+}
+.gocake ,.gotusi,.gogift{
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.myborder {
+  border: 1px solid black;
+  font-size: 15px;
+  margin-left: 5rpx;
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}

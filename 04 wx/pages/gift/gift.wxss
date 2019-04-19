@@ -1,0 +1,48 @@
+.all {
+  width: 95%;
+  margin: 0 auto;
+}
+.lead {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20rpx;
+}
+.color {
+  color: pink;
+  border-bottom: 1px solid pink;
+}
+.cakelist {
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.cake {
+  width: 48%;
+  font-size: 14px;
+  margin-bottom: 10rpx;
+}
+.cake image {
+  width: 100%;
+  height: 364rpx;
+
+}
+.addshop {
+  display: flex;
+  justify-content: space-between;
+}
+.addbtn {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: white;
+  background: #FE4E05;
+}
+.addbtn::after {
+  border: 0;
+}
+.nomore {
+  text-align: center;
+}
